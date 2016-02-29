@@ -17,6 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
      }
      
      inv <- NULL
+     
      set <- function(y) {
           
           if(!is.matrix(y)) {
@@ -26,6 +27,7 @@ makeCacheMatrix <- function(x = matrix()) {
           }
           
           x <<- y
+          
           inv <<- NULL
           
      }
